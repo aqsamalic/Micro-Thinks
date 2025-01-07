@@ -2,50 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Fade-in Animation */
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-  
-  /* Custom Class for Fade-in */
-  .animate-fadeIn {
-    animation: fadeIn 0.5s forwards;
-  }
-  
-  /* Hover effects */
-  .group:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-  }
-  
-  .group:hover .absolute {
-    transform: translateX(20px);
-    transition: transform 0.3s ease;
-  }
-  
-  .group:hover .text-white {
+  100% {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
   }
-  
-  .group:hover .opacity-0 {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Float Animations */
+@keyframes float-0 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
   }
-  
-  .group:hover .opacity-100 {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  25% {
+    transform: translate(20px, 20px) rotate(180deg);
   }
-  
-  .group:hover .scale-100 {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+  50% {
+    transform: translate(-20px, 30px) rotate(360deg);
   }
-  
+  75% {
+    transform: translate(-15px, -20px) rotate(180deg);
+  }
+}
+
+@keyframes float-1 {
+  /* Define unique keyframe steps here */
+}
+
+@keyframes float-2 {
+  /* Define unique keyframe steps here */
+}
+
+/* Repeat for float-3, float-4, float-5 */
+
+/* Custom hover effects */
+.group:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.group:hover .absolute {
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}

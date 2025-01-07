@@ -8,6 +8,9 @@ import ServicesSection from "./Services/Page";
 import ContactPage from "./Contact/Page";
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
+import WebDesign from './Services/sub-services/webdesign';
+import ServiceWebcards from './Services/sub-services/ServiceWebcards.Jsx';
+// import ServiceWebcards from './Services/sub-services/ServiceWebcards.jsx';
 
 
 
@@ -35,6 +38,10 @@ export default function Home() {
         </main>
   </div>
           <ContactPage/>
+          <WebDesign/>
+          <ServiceWebcards/>
+
+
     </>
   );
 }
