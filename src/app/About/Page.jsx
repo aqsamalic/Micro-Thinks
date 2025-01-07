@@ -127,9 +127,9 @@ export default function Specilist() {
   onClick={() => {
     document.getElementById("Contact-page").scrollIntoView({ behavior: "smooth" });
   }}
-  className="items-center gap-2 bg-white text-[#1F2456] px-4 py-2 rounded-full"
+  className="outline  outline-1 text-white  group hover:rounded-3xl duration-300 hover:outline-orange-500"
 >
-Book Now <ArrowRight className="w-4 h-4 text-orange-500" />
+   Book Now <ArrowRight className="w-4 h-4 text-orange-500" />
 </Button>
            
           </motion.div>
