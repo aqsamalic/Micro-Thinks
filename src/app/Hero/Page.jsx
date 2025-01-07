@@ -45,7 +45,7 @@ const HeroSection = () => {
       </div>
 
       {/* CircleLogo in the Bottom-Right */}
-      <div className="absolute bottom-5 right-5">
+      <div className=" hidden lg:block absolute bottom-5 right-5">
         <CircleLogo />
       </div>
     </div>
