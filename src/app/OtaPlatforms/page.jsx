@@ -69,7 +69,7 @@ export default function OtaPlatforms() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 "></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <div className="flex items-center gap-2 mb-2">
                     <image.icon className="w-6 h-6" />
@@ -80,7 +80,7 @@ export default function OtaPlatforms() {
               </div>
             ))}
           </div>
-          <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity">
+          <div>
             <button
               onClick={prevImage}
               className="p-2 rounded-full   "
@@ -136,7 +136,7 @@ export default function OtaPlatforms() {
   onClick={() => {
     document.getElementById("Contact-page").scrollIntoView({ behavior: "smooth" });
   }}
-  className="px-6 py-3 border-2 border-orange-500 text-[#1F2456] font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 group"
+  className="outline  outline-2 text-[#1F2456]   group hover:rounded-3xl duration-300 hover:outline-orange-500"
 >
 Contact Us <ChevronRight className="w-5 h-5 inline-block ml-2 transform group-hover:translate-x-1 transition-transform" />
 </Button>
